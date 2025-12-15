@@ -15,7 +15,7 @@ def check_data_quality():
     print("=" * 80)
     
     # Check vehicles
-    print("\n🚗 Vehicles:")
+    print("\n Vehicles:")
     vehicles_count = db.dim_vehicles.count_documents({})
     vehicles_no_id = db.dim_vehicles.count_documents({'vehicle_id': {'$exists': False}})
     print(f"  Total: {vehicles_count}")
@@ -23,7 +23,7 @@ def check_data_quality():
     print(f"  Status: {'✅' if vehicles_no_id == 0 else '❌'}")
     
     # Check drivers
-    print("\n👨‍✈️ Drivers:")
+    print("\n Drivers:")
     drivers_count = db.dim_drivers.count_documents({})
     drivers_no_id = db.dim_drivers.count_documents({'driver_id': {'$exists': False}})
     print(f"  Total: {drivers_count}")
@@ -39,7 +39,7 @@ def check_data_quality():
     print(f"  Status: {'✅' if warehouses_no_location == 0 else '❌'}")
     
     # Check customers
-    print("\n👥 Customers:")
+    print("\n Customers:")
     customers_count = db.dim_customers.count_documents({})
     customers_no_location = db.dim_customers.count_documents({'location': {'$exists': False}})
     print(f"  Total: {customers_count}")

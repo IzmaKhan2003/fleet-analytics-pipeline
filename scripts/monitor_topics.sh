@@ -1,7 +1,7 @@
 #!/bin/bash
 # Monitor Kafka topics
 
-echo "📊 Kafka Topic Statistics"
+echo " Kafka Topic Statistics"
 echo "=========================="
 
 for topic in vehicle-telemetry deliveries incidents; do
