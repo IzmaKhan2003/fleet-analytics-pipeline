@@ -192,7 +192,7 @@ class DimensionDataGenerator:
     def generate_customers(self, count=None):
         """Generate customer dimension data"""
         count = count or self.counts['customers']
-        self.logger.info(f"👥 Generating {count} customers...")
+        self.logger.info(f"Generating {count} customers...")
         
         customer_types = ['Retail', 'Wholesale', 'Individual']
         
